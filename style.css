@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+/******Header styling starts here ********/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    background-color: #fefefe;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.menu_btn {
+    display: none;
+}
+
+.header-logo img {
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #080808;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: 2px black underline;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    text-decoration: 2px black underline;
+}
+/********** Header ends here ************/
+
+
+/******** Hero banner styling here ************/
+.hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/hero_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    padding:150px 0;
+    margin: 5px auto;
+    max-width: 95%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fefefe;   
+}
+.over-lay{
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.hero-banner h1 {
+    font-size: 40px;
+}
+
+.hero-banner p {
+    font-size: 18px;
+}
+
+.hero-banner button {
+    padding: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.hero-banner button:hover {
+    background-color: #080808;
+    color: #fefefe;
+    transition: 0.5s;
+}
+
+/************* Hero Banner ends here ****************/
+
+
+/************* collection list starts here**********/
+.collections{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 200px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.list1{
+    width: 40%;
+    height: 100%;
+    background-image: url("images/new_arrivals.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.list2{
+    width: 27%;
+    height: 100%;
+    background-image: url("images/womens_collection.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.list3{
+    width: 27%;
+    height: 100%;
+    background-image: url("images/mens_collecton.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.list1 button{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list1 button:hover{
+    background-color: #080808;
+    color: #fefefe;
+    transition: 0.5s;
+}
+.list2 button{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list2 button:hover{
+    background-color: #080808;
+    color: #fefefe;
+    transition: 0.5s;
+}
+.list3 button{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list3 button:hover{
+    background-color: #080808;
+    color: #fefefe;
+    transition: 0.5s;
+}
+/*********** collection list ends here **************/
+
+
+
+
+/********** Newsletter styling starts here ***********/
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    height: 250px;
+    max-width: 78.7%;
+    border-top: 1px solid rgb(240, 232, 232);
+    border-bottom: 1px solid rgb(240, 232, 232);
+}
+.newsletter input{
+    width: 500px;
+    border: none;
+    border-bottom:1px solid rgb(240, 232, 232);
+    margin: 15px 0;
+    position: relative;
+    outline: none;
+   
+}
+.newsletter span{
+    position: absolute;
+    right: 27%;
+ 
+}
+.newsletter span button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/************* Newsletter styling ends here ************/
+
+
+/**********Media Queries***********/
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        justify-content: space-between;
+    }
+    .menu_btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu_btn .line {
+        width: 30px;
+        height: 3px;
+        background-color: #080808;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #080808;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 500px;
+    }
+
+    .nav-bar ul li a {
+        color: #fefefe;
+    }
+
+    .nav-bar ul li a:hover {
+        color: #fefefe;
+        text-decoration: 2px white underline;
+    }
+
+    .nav-bar ul li a.active {
+        color: #fefefe;
+        text-decoration: 2px white underline;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+    .hero-banner {
+        height: 400px;
+        max-width: 100%;
+        width: 100%;
+}
+.newsletter input{
+    width: 250px;
+}
+}
+@media only screen and (max-width: 767px){
+.collections{
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 25px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around
+}
+.list1{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.list2{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.list3{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(240, 232, 232);
+    position: relative;
+    
+}
+
+}
